@@ -1,0 +1,336 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#000000"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="portrait" >
+
+        
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textColor="#ffffff"
+            android:text="Metric   " />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="English  " />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/clocklabel"
+        android:layout_marginLeft="5dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:minHeight="70dp"
+        android:textColor="#ffffff"
+        android:minWidth="78dp" 
+        android:textSize="@dimen/forty">
+    </TextView>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView0"
+        android:layout_toRightOf="@+id/textView0"
+        android:minHeight="70dp"
+        android:minWidth="20dp"
+        android:textColor="#ffffff"
+        android:text=":"
+        android:textSize="@dimen/forty" >
+    </TextView>
+
+    
+    
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_toRightOf="@+id/textView1"
+        android:minHeight="70dp"
+        android:textColor="#ffffff"
+        android:minWidth="78dp"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/forty" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:gravity="center_horizontal"
+        android:minHeight="70dp"
+        android:minWidth="78dp"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/thirtyfive" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toRightOf="@+id/textView3"
+        android:minHeight="40dp"
+        android:minWidth="60dp"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/thirty"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dilatedlabel"
+        android:layout_marginTop="30dp"
+        android:minHeight="70dp"
+        android:textColor="@color/cyan"
+        android:minWidth="78dp"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/forty" />
+
+    <TextView
+        android:id="@+id/dilatedlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView0"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="33dp"
+        android:text="Dilated Clock"
+        android:textColor="@color/cyan"
+        android:textSize="@dimen/thirty" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textColor="#ffffff"
+        android:text="Pseudo-travel at constant speed" />
+
+    <!-- make this checkbox make a textbox appear to set the velocity. -->
+    <!-- also put that value in the velocity box emboldened in red or something, like fixed -->
+
+    <TextView
+        android:id="@+id/TextViewV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dilatedlabel"
+        android:layout_below="@+id/textView01"
+        android:layout_marginTop="20dp"
+        android:text="Current Velocity:"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/twentyfive" />
+
+ <TextView
+     android:id="@+id/TextViewC"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignLeft="@+id/dilatedlabel"
+     android:layout_below="@+id/TextViewV"
+     android:layout_marginTop="10dp"
+     android:text="Set Speed of Light:"
+     android:textColor="@color/yellow"
+     android:textSize="@dimen/twentythree" />
+
+    <TextView
+        android:id="@+id/clocklabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView0"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:text="System Clock"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/thirty" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView01"
+        android:layout_toRightOf="@+id/textView01"
+        android:minHeight="70dp"
+        android:minWidth="20dp"
+        android:textColor="@color/cyan"
+        android:text=":"
+        android:textSize="@dimen/forty" />
+
+    
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView11"
+        android:layout_toRightOf="@+id/textView11"
+        android:minHeight="70dp"
+        android:minWidth="78dp"
+        android:textColor="@color/cyan" 
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/forty"/>
+    
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView21"
+        android:layout_toRightOf="@+id/textView21"
+        android:gravity="center_horizontal"
+        android:minHeight="70dp"
+        android:minWidth="78dp"
+        android:textColor="@color/cyan"
+        android:textSize="@dimen/thirtyfive" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView31"
+        android:layout_toRightOf="@+id/textView31"
+        android:minHeight="40dp"
+        android:minWidth="60dp"
+        android:textColor="@color/cyan"
+        android:textSize="@dimen/thirty"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/TextViewVel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TextViewV"
+        android:layout_alignTop="@+id/TextViewV"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/TextViewV"
+        android:minHeight="40dp"
+        android:textColor="#ffffff"
+        android:minWidth="60dp" />
+
+        <TextView
+            android:id="@+id/TextViewVelC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/TextViewC"
+            android:layout_alignTop="@+id/TextViewC"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/TextViewC"
+            android:minHeight="40dp"
+            android:textColor="@color/yellow"
+            android:minWidth="60dp" />
+    
+    <TextView
+        android:id="@+id/TextViewUnitC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TextViewVelC"
+        android:layout_marginLeft="7dp"
+        android:layout_toRightOf="@+id/TextViewVelC"
+        android:text="m/s"
+        android:textColor="@color/yellow"
+        android:textSize="@dimen/twenty" />
+
+            <!-- Below is the new line                                                                     -->
+    
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextViewC"
+        android:layout_alignBottom="@+id/TextViewC"
+        android:layout_alignLeft="@+id/TextViewVelC"
+        android:layout_alignRight="@+id/TextViewVelC"
+        android:background="@color/grey"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="numberDecimal"
+        android:padding="1dp"
+        android:text="10"
+        android:imeOptions="actionGo"
+        android:textColor="@color/yellow" />
+
+    <EditText
+        android:id="@+id/editTextv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextViewV"
+        android:layout_alignBottom="@+id/TextViewV"
+        android:layout_alignLeft="@+id/TextViewVelC"
+        android:layout_alignRight="@+id/TextViewVelC"
+        android:background="@color/grey"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="numberDecimal"
+        android:padding="1dp" />
+    
+    	
+        <TextView
+        android:id="@+id/Velocity_Viewer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextViewV"
+        android:layout_alignBottom="@+id/TextViewV"
+        android:layout_alignLeft="@+id/TextViewVelC"
+        android:layout_alignRight="@+id/TextViewVelC"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:ems="10"
+        android:visibility="invisible"
+        android:gravity="center_horizontal"
+        android:padding="1dp" />
+
+    <TextView
+        android:id="@+id/TextViewUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextViewC"
+        android:layout_toRightOf="@+id/editText1"
+        android:layout_marginLeft="7dp"
+        android:text="m/s"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/twenty" />
+
+    <Button
+        android:id="@+id/backbutton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/dilatedlabel"
+        android:layout_alignBottom="@+id/dilatedlabel"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="7dp"
+        android:background="@color/grey"
+        android:text="Sync Clocks"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:minHeight="40dp"
+        android:minWidth="60dp"
+        android:textColor="@color/cyan"
+        android:textSize="@dimen/thirty"
+        android:visibility="invisible" />
+
+</RelativeLayout>
